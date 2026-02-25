@@ -7,6 +7,10 @@ urlpatterns = [
     # Dashboard
     path('', views.dashboard, name='dashboard'),
 
+    # Navigation tab aliases
+    path('submissions/', views.sii_submissions_list, name='submissions'),
+
+
     # SIISubmission
     path('sii_submissions/', views.sii_submissions_list, name='sii_submissions_list'),
     path('sii_submissions/add/', views.sii_submission_add, name='sii_submission_add'),
