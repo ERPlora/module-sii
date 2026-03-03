@@ -27,3 +27,14 @@ PERMISSIONS = [
 'sii.submit_sii',
 'sii.manage_settings',
 ]
+
+ROLE_PERMISSIONS = {
+    "admin": ["*"],
+    "manager": [
+        "submit_sii",
+        "view_siisubmission",
+    ],
+    "employee": [
+        "view_siisubmission",
+    ],
+}
